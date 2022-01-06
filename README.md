@@ -1,2 +1,2 @@
-# CrusoJS
- Cruso basico de Java Script
+# Cruso Java Sscript
+ Cruso basico de Java Script.
