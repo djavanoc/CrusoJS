@@ -1,0 +1,65 @@
+<script type="text/javascript">
+
+  var usuario = {
+    nome: "Guilherme",
+    sobrenome: "Ferreira",
+    idade: 33
+  };
+
+  var usuario2 = new Object();
+  usuario2.nome = "Djavan";
+  usuario2.Sobrenome = "camargo";
+  usuario2.idade = 28;
+
+  var lista1 =[usuario,usuario2];
+  var lista2 = [
+  {
+    nome: "Guilherme",
+  sobrenome: "Ferreira",
+  idade: 33
+},
+{
+  nome: "JR",
+sobrenome: "Oliveira",
+idade: 44
+},
+{
+  nome: "Mario",
+sobrenome: "Santo",
+idade: 37
+}
+  ];
+
+  console.log(lista1,lista2);
+
+  //document.write(lista2[1].nome);
+
+   /*for(var i = 0; i < 3; i = i + 1){
+    document.write(lista2[i].nome + "<br>");
+    document.write(lista2[i].sobrenome + "<br>");
+    document.write(lista2[i].idade + "<br>");
+  }
+*/
+  // for dinamico
+
+  for(var i = 0; i < lista1.length; i = i++){
+   document.write(lista1[i].nome + "<br>");
+   document.write(lista1[i].sobrenome + "<br>");
+   document.write(lista1[i].idade + "<br>");
+  }
+
+// for in
+
+   /*for(let chave in lista2){
+     document.write(lista2[chave].nome + "<br>");
+     document.write(lista2[chave].sobrenome + "<br>");
+     document.write(lista2[chave].idade +"<br>");
+   }
+*/
+//for on
+for(usuario of lista1){
+  document.write(usuario.nome + "<br>");
+}
+
+
+</script>
