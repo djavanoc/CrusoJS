@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang=" " dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Título da Página</title>
+  </head>
+  <body>
+     <h2>Home</h2>
+
+
+    <div Id="nomeUsuario"  class="nome-usuario">
+
+    </div>
+
+    <div class="nome-usuario">
+
+    </div>
+
+
+     <script type="text/javascript">
+
+       let Nome = "<h3>Djavan</h3>";
+       //metodo para colocar o nome "Djavan" dentro da div ID
+       //get chama os elementos pra chamar o nome na div
+       document.getElementById('nomeUsuario').innerHTML = Nome; //metodo para chamar um ID
+
+       //metodo para alterar todos os elemetos com uma class
+
+      let elementos = document.getElementsByClassName('nome-usuario');
+      console.log(elementos); // visualizar lista de elementos no console da pagina
+ //colocar nome para dentro dos elementos
+//pode ser feito co o for of
+      for(let item of elementos){
+        item.innerHTML = "Maria";
+      }
+
+     </script>
+
+
+  </body>
+</html>
